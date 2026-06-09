@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex</title>
+</head>
+<body>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Buscar Pokémon por nome ou ID">
+
+        <h1>Pokédex</h1>
+        <button onclick="buscarPokemon()">
+            Buscar
+        </button>
+
+        <select id="typeFilter" onchange="filtrarTipo()">
+            <option value="">Todos os tipos</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="ground">Ground</option>
+        </select>
+    </div>
+
+    <div id="pokedex"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
